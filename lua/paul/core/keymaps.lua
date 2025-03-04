@@ -19,10 +19,10 @@ keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" }) -- 
 keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
 
 -- window movement
-keymap.set("n", "<leader>sh", "<C-w>h", { desc = "move left" })
-keymap.set("n", "<leader>sl", "<C-w>l", { desc = "move right" })
-keymap.set("n", "<leader>sk", "<C-w>k", { desc = "move up" })
-keymap.set("n", "<leader>sj", "<C-w>j", { desc = "move down" })
+keymap.set("n", "<leader>s<Left>", "<C-w>h", { desc = "move left" })
+keymap.set("n", "<leader>s<Right>", "<C-w>l", { desc = "move right" })
+keymap.set("n", "<leader>s<Up>", "<C-w>k", { desc = "move up" })
+keymap.set("n", "<leader>s<Down>", "<C-w>j", { desc = "move down" })
 
 -- tab management & movement
 keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" }) -- open new tab
