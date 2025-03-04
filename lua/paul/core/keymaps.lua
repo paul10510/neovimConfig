@@ -18,6 +18,13 @@ keymap.set("n", "<leader>st", ":10sp<CR>:terminal<CR>", { desc = "split a termin
 keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" }) -- make split windows equal width & height
 keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current split" }) -- close current split window
 
+-- window movement
+keymap.set("n", "<leader>sh", "<C-w>h", { desc = "move left" })
+keymap.set("n", "<leader>sl", "<C-w>l", { desc = "move right" })
+keymap.set("n", "<leader>sk", "<C-w>k", { desc = "move up" })
+keymap.set("n", "<leader>sj", "<C-w>j", { desc = "move down" })
+
+-- tab management & movement
 keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" }) -- open new tab
 keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" }) -- close current tab
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
